@@ -1,0 +1,15 @@
+:host {
+  display: block;
+
+  --button-dynamic: black;
+  --button-font-size: 13px;
+  --button-bg-color: yellow;
+  --button-border: 1px solid blue;
+
+  .btn {
+    color: var(--button-dynamic, black);
+    font-size: var(--button-font-size, 13px);
+    border: var(--button-border, 1px solid blue);
+    background-color: var(--button-bg-dynamic, yellow);
+  }
+}

@@ -1,0 +1,20 @@
+:host {
+  display: block;
+
+  width: 600px;
+  height: 50px;
+  padding: 20px;
+  border: 2px dotted red;
+}
+
+
+::slotted([slot="start"]) {
+  --button-font-size: 50px;
+  --button-dynamic: purple;
+  font-size: var(--button-color);
+}
+
+::slotted([slot="end"]) {
+  --button-font-size: 50px;
+  --button-dynamic: pink;
+}
